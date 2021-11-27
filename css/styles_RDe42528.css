@@ -1,0 +1,295 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: linear-gradient(90deg, #42275a, #734b6d);
+	opacity: 0.9;
+	color: white;
+}
+
+body {
+	margin: 0px auto;
+	padding: 0 20px 20px;
+	width: 90%;
+}
+header {
+	background-image: url("../images/CORONA-VIRUS-BANNER-1024x269.jpg");
+	background-size: 100% 100%;
+	height: 200px;
+	margin: 0 auto;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgb(137, 176, 192);
+	margin: 5px 0 5px;
+}
+
+nav > div > a {
+	display: block;
+	text-align: center;
+	border-left: 1px solid black;
+	border-right: 3px solid black;
+	line-height: 2em;
+	text-decoration: none;
+
+	color: rgb(49, 45, 40);
+	font-size: large;
+	font-weight: bold;
+}
+
+nav > div > a:hover {
+	background-color: #1a7dda;
+	color: snow;
+}
+
+article {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgb(49, 45, 40);
+}
+
+aside > h3 {
+	font: size 2em;
+	font-family: "Times New Roman", Times, serif;
+	color: rgb(22, 221, 211);
+
+	text-align: center;
+}
+
+aside > iframe {
+	height: 500px;
+	width: 100%;
+}
+/* 
+article > div {
+	background-color: rgb(54, 53, 53);
+} */
+
+#symptoms > ul {
+	list-style-type: square;
+}
+
+#symptoms {
+	padding: 3%;
+}
+
+#symptoms > h2 {
+	color: red;
+	text-align: center;
+	font-weight: bold;
+}
+
+@keyframes blink {
+	0% {
+		color: red;
+	}
+	20% {
+		color: yellow;
+	}
+	45% {
+		color: orange;
+	}
+	60% {
+		color: greenyellow;
+	}
+	90% {
+		color: pink;
+	}
+}
+.blink {
+	color: white;
+	animation-name: blink;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	font-weight: bold;
+}
+
+footer {
+	text-align: right;
+	margin-top: 5px;
+	padding-left: 5px;
+	font-size: small;
+	font-style: italic;
+}
+
+.popOut {
+	transition: 0.15s;
+}
+.popOut:hover {
+	transform: scale(1.15);
+}
+
+.list {
+	margin-left: 3%;
+}
+
+fieldset {
+	margin-top: 2%;
+	padding: 10px;
+	border-radius: 10px;
+}
+fieldset > div {
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 15px;
+	margin-right: 5px;
+}
+
+fieldset > div > * {
+	flex: 1 1 50%;
+}
+
+figure > figcaption {
+	font-size: smaller;
+	text-align: center;
+	font-style: italic;
+}
+
+form > fieldset > legend {
+	padding: 5px;
+	background-color: black;
+	border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+	margin: 5px 2% 25px;
+	width: 45%;
+	border-radius: 10px;
+	line-height: 2em;
+	font-size: large;
+	font-weight: bold;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	background-color: #1a7dda;
+	color: snow;
+}
+
+#vaccine {
+	width: 100%;
+	min-height: 200px;
+	padding: 2%;
+	border-radius: 15px;
+}
+
+#messageDiv {
+	display: none;
+	background-color: antiquewhite;
+	border-radius: 5px;
+	padding: 10px;
+	color: #42275a;
+	font-size: large;
+	overflow: auto;
+}
+
+#message {
+	text-align: center;
+	background-color: cadetblue;
+	color: snow;
+	min-height: 450px;
+	margin: auto;
+}
+
+#message > p {
+	position: relative;
+	top: 150px;
+}
+
+#generatedMessage {
+	font-weight: bold;
+	color: black;
+}
+
+#youtubeVideo {
+	margin-top: 3%;
+	height: 350px;
+}
+
+#grid > .gridHead {
+	background-color: teal;
+	color: snow;
+}
+
+article > div > h2 {
+	text-align: center;
+	color: #cae20a;
+}
+
+input:focus {
+	background-color: lightcyan;
+}
+
+aside > p {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: justify;
+}
+
+.bold {
+	font-weight: bold;
+	color: red;
+}
+
+@media only screen and (max-width: 480px) {
+	nav > div {
+		flex: 1 1 100%;
+		border-bottom: 1px solid black;
+	}
+
+	article > aside {
+		flex: 1 1 100%;
+	}
+
+	article > div {
+		flex: 1 1 100%;
+		overflow: auto;
+	}
+
+	fieldset > div > * {
+		flex: 1 1 100%;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	nav > div {
+		flex: 1 1 50%;
+		border-top: 1px solid black;
+	}
+	nav > div:last-child {
+		flex: 1 1 100%;
+		border-top: 1px solid black;
+	}
+
+	article > aside {
+		flex: 1 1 100%;
+	}
+
+	article > div {
+		flex: 1 1 100%;
+		overflow: auto;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	nav > div {
+		flex: 1 1 30%;
+	}
+
+	article > aside {
+		padding: 1%;
+		flex: 1 1 40%;
+	}
+
+	article > div {
+		flex: 1 1 60%;
+		padding: 2%;
+	}
+}

@@ -1,0 +1,13 @@
+Page 1:
+Content: https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html
+Live status: https://resources-covid19canada.hub.arcgis.com/pages/media
+
+Page 2:
+Figure : https://pixabay.com/photos/woman-healthcare-professional-5829666/
+
+Page 3:
+Written Content: https://www.who.int/emergencies/diseases/novel-coronavirus-2019/covid-19-vaccines/advice
+Vaccine Deatils: https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19/vaccines.html
+Youtube Video: https://www.youtube.com/watch?v=_JB8IEPqd1o
+
+Banner: https://pixabay.com/illustrations/covid19-corona-virus-coronavirus-4946260/

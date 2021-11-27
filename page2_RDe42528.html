@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rahul">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/styles_RDe42528.css">
+    <script src="script/script__RDe42528.js"></script>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <div><a href="index.html">Home</a></div>
+        <div><a href="page2_RDe42528.html">Vaccine Registration</a></div>
+        <div><a href="page3_RDe42528.html">About</a></div>
+    </nav>
+    <article>
+
+        <aside>
+            <figure>
+                <img src="images/vaccine.jpg" alt="vaccine image" id="vaccine"
+                    cite="https://pixabay.com/photos/woman-healthcare-professional-5829666/">
+                <figcaption>Credits: https://pixabay.com/photos/woman-healthcare-professional-5829666/</figcaption>
+            </figure>
+            <p>
+                COVID19 vaccination drive to the general public of the nation, which includes all citizens 5 years or
+                above. Please register for your vaccine slot immediately.
+            </p>
+
+        </aside>
+
+        <div id="regForm">
+            <form action="" method="post" onsubmit="showResult(this.form); return false;">
+                <fieldset>
+                    <legend>Registeration Details <span class="blink">NEW</span></legend>
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </div>
+                    <div>
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" min="5" max="120" placeholder="Between 5 - 120"
+                            required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="johndoe@gmail.com"
+                            pattern="[a-z0-9._%+-]{3,}@[a-z0-9.-]{3,}\.[a-z]{2,}" required>
+                    </div>
+
+                    <div>
+                        <label for="appoinmentDate">Appoinment Date</label>
+                        <input type="date" name="appoinmentDate" id="appoinmentDate" min="2020-10-01" min="2023-10-01"
+                            required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+                            placeholder="(nnn)nnn-nnnn">
+                    </div>
+
+                    <div>
+                        <label for="gender">Gender</label>
+                        <span>
+                            <input type="radio" name="gender" id="gender1" value="male" checked>Male
+                            <input type="radio" name="gender" id="gender2" value="female">Female
+                            <input type="radio" name="gender" id="gender3" value="X">TransGender
+                        </span>
+                    </div>
+                    <div>
+                        <label for="slots">Preferred Time Slots</label>
+                        <span>
+                            <input type="checkbox" name="slots" id="slots1" value="morning"> Morning (9-12)
+                            <input type="checkbox" name="slots" id="slots2" value="afternoon"> Afternoon (1-3)
+                            <input type="checkbox" name="slots" id="slots3" value="evening"> Evening (4-6)
+                        </span>
+                    </div>
+
+                </fieldset>
+
+                <div id="buttons">
+                    <input type="submit" value="Submit Data" onclick="verify(this.form)">
+                    <input type="reset" value="Clear Input">
+                </div>
+            </form>
+        </div>
+
+        <div id="messageDiv">
+            <div id="message">
+                <p>
+                    Registered for Vaccine Successfully
+                    <br>
+                    Details are Shown Below
+                    <br>
+                    <span id="generatedMessage"></span>
+                    <br>
+                    Please check the registered Email for complete Appoinment Details.
+
+                </p>
+            </div>
+
+        </div>
+
+
+    </article>
+    <footer>CSIS 1280 &copy;Rahul Fall 2021</footer>
+</body>
+
+</html>

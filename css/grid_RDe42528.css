@@ -1,0 +1,20 @@
+section#grid {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(5, 1fr);
+	/*grid-template-columns: repeat(2, 25%) 40% 1fr;*/
+	grid-template-rows: repeat(5, 1fr);
+	height: 550px;
+}
+
+div[id^="grid_"] {
+	background-color: antiquewhite;
+	border: 1px solid black;
+
+	padding: 15px;
+	font-weight: bold;
+	font-size: large;
+	color: black;
+	text-align: center;
+	border-radius: 8px;
+}
